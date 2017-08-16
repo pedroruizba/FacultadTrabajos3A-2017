@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-	float sueldo, porcentaje;
+	float sueldo;
 	cout<<"Ingresa tu sueldo actual: ";
 	cin>>sueldo;
 	
