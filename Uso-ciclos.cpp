@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
 
-    int opc = 0,i,factorial,numero, a=0,b,numeroprimo,calificacion,suma=0, contador = 0;
+    int opc = 0,i,factorial,numero, a=0,b,numeroprimo,calificacion=0,suma=0, contador = 0;
 	float promedio;
 
 
@@ -63,20 +63,19 @@ int main() {
 			cout<<"\nEl factorial de numero es : "<<factorial;
         break;
         case 3:
-        	cout<<"Ingresa las calificaciones y coloca un 0 o menor a 0 para terminar y calcular promedio\n";
-			while(calificacion > 0)
-  			{
-    			cout<<"Ingrese la calificacion: "<<endl;
+        	cout<<"Ingresa las calificaciones y coloca un -1 para terminar y calcular promedio\n";
+			while(calificacion !=-1)
+  			{	
+    			cout<<"Ingrese la calificacion: ";
     			cin>>calificacion;
-    			if(calificacion != 0)
+    			if(calificacion != -1)
     			{
-      				calificacion+=calificacion;
+      				suma+=calificacion;
       				contador+=1;
     			}
     			else
     			{
-    				contador-=1;
-    				promedio=calificacion/contador;
+    				promedio=suma/contador;
       				cout<<"Promedio: "<<promedio<<endl;
     			}
 
